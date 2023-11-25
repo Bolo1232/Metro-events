@@ -1,0 +1,67 @@
+/* EventList.css */
+.event-list-container {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .events {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 280px; /* Adjust the gap between events as needed */
+    justify-content: center;
+    margin-top: 120px; /* Add margin to the top of the events container */
+  }
+  
+  
+  .event {
+    border-radius: 15px;  
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .event img {
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    margin-top: 100px;
+    
+  }
+  
+  .event .details {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .event .description {
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+  
+  .event:hover {
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  .viewDetailsBtn {
+    background-color: transparent;
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 100px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+  }
+  
+  .viewDetailsBtn:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  
