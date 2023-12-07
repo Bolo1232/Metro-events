@@ -1,27 +1,22 @@
 // EventList.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './EventList.css';
-import { handleViewDetails } from './EventListAction';
 
 const EventList = ({ events }) => {
   return (
     <div className="event-list-container">
       <h2>Event List</h2>
       <div className="events">
-        {events.map(event => (
-          <div key={event.id} className="event">
-            <img src={event.imageUrl} alt={`Event ${event.id}`} />
+        {events.map(({ id, description, imageUrl }) => (
+          <div key={id} className="event">
+            <Link to={`/event-details/${id}`}>
+              <img src={imageUrl} alt={description} />
+            </Link>
             <div className="details">
-              <strong>{event.name}</strong>
-              <p className="description">{event.description}</p>
-              <Link
-                to={`/event-details/${event.id}`}
-                className="viewDetailsBtn"
-                onClick={() => handleViewDetails(event.id)}
-              >
-                View Details
-              </Link>
+              <strong>{description}</strong>
+              {/* You can add more details here if needed */}
             </div>
           </div>
         ))}

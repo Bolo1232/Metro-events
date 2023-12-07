@@ -1,21 +1,39 @@
 /* Navbar.css */
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #000000ef;
-    color: white;
-    padding: 30px;
-    align-items: center;
-  }
-  
-  .home-link {
-    color: white;
-    text-decoration: none; /* Remove underline from the link */
-    font-size: 20px;
-  }
-  
-  .home-link:hover {
-    text-decoration: underline; /* Underline the link on hover if needed */
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 15px 30px;
+  align-items: center;
+}
+
+.home-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+.organizer-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.organizer-button:hover {
+  background-color: #45a049;
+}

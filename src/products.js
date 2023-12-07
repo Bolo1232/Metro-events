@@ -1,12 +1,14 @@
-import product1 from "./assets/products/1.png";
-import product2 from "./assets/products/2.png";
-import product3 from "./assets/products/3.png";
-import product4 from "./assets/products/4.png";
-import product5 from "./assets/products/5.png";
-import product6 from "./assets/products/6.webp";
-import product7 from "./assets/products/7.webp";
-import product8 from "./assets/products/8.webp";
-import product9 from "./assets/products/9.png";
+import product1 from "./assetes/products/1.png";
+import product2 from "./assetes/products/2.png";
+import product3 from "./assetes/products/3.png";
+import product4 from "./assetes/products/4.png";
+import product5 from "./assetes/products/5.png";
+import product6 from "./assetes/products/6.webp";
+import product7 from "./assetes/products/7.webp";
+import product8 from "./assetes/products/8.webp";
+import product9 from "./assetes/products/9.png";
+import product10 from "./assetes/products/10.png";
+import product11 from "./assetes/products/11.png";
 
 export const PRODUCTS = [
   {
@@ -62,5 +64,23 @@ export const PRODUCTS = [
     productName: "Youtuber vs Proffesional Boxer",
     price: 40.0,
     productImage: product9,
+  },
+  {
+    id: 10,
+    productName: "Youtuber vs Proffesional Boxer",
+    price: 40.0,
+    productImage: product10,
+  },
+  {
+    id: 11,
+    productName: "Youtuber vs Proffesional Boxer",
+    price: 40.0,
+    productImage: product11,
+  },
+  {
+    id: 12,
+    productName: "Youtuber vs Proffesional Boxer",
+    price: 40.0,
+    productImage: product11,
   },
 ];

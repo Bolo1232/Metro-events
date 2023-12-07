@@ -1,0 +1,40 @@
+/* EventDetails.css */
+
+.event-details-container {
+  background-color: rgba(20, 31, 134, 0.836);
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.event-details {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.image-container {
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.event-details img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.event-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.event-details p {
+  font-size: 20px;
+  color: #ffffff; /* Adjust text color as needed */
+}
+
+/* Add more styles as needed */

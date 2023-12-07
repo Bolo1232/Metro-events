@@ -1,67 +1,51 @@
 /* EventList.css */
+
 .event-list-container {
-    margin-top: 150px;
-    text-align: center;
-    font-size: 40px;
-  }
-  
+  margin-top: 50px;
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.event {
+  border-radius: 15px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.event img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.event:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.event .details {
+  padding: 15px;
+  text-align: center;
+}
+
+.event .description {
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
   .events {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 280px; /* Adjust the gap between events as needed */
-    justify-content: center;
-    margin-top: 120px; /* Add margin to the top of the events container */
+    grid-template-columns: 1fr;
   }
-  
-  
-  .event {
-    border-radius: 15px;  
-    width: 300px;
-    height: 350px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .event img {
-    width: 250px; /* Adjust the width as needed */
-    height: 250px; /* Adjust the height as needed */
-    margin-top: 100px;
-    
-  }
-  
-  .event .details {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .event .description {
-    font-size: 14px; /* Adjust the font size as needed */
-  }
-  
-  .event:hover {
-    transition: 0.3s ease-in;
-    cursor: pointer;
-  }
-  
-  .viewDetailsBtn {
-    background-color: transparent;
-    border: 2px solid rgb(19, 19, 19);
-    min-width: 100px;
-    padding: 5px 10px;
-    margin-top: 10px;
-    border-radius: 15px;
-  }
-  
-  .viewDetailsBtn:hover {
-    background-color: rgb(19, 19, 19);
-    color: white;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  
+}
